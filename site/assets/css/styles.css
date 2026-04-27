@@ -59,15 +59,11 @@ a {
   font-weight: 800;
 }
 
-.bi-brand span {
-  width: 28px;
-  height: 28px;
-  display: grid;
-  place-items: center;
-  border-radius: 8px;
-  background: var(--bi-cyan);
-  color: #083940;
-  font-weight: 800;
+.bi-logo {
+  display: block;
+  width: auto;
+  flex-shrink: 0;
+  border-radius: 6px;
 }
 
 .bi-nav {

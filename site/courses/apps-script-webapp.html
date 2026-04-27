@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Web App Apps Script Course</title>
+  <title>สร้าง Web App ด้วย Google Sheets + Apps Script — BookIntelligent</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,12 +12,17 @@
 <body>
   <div class="bi-shell">
     <header class="bi-topbar">
-      <a class="bi-brand" href="../index.html"><span>B</span><strong>BookIntelligent</strong></a>
+      <a class="bi-brand" href="../index.html">
+        <img src="../assets/images/logo.jpg" class="bi-logo" height="44" alt="BookIntelligent">
+      </a>
       <nav class="bi-nav" aria-label="Main navigation">
         <a href="../index.html">หน้าแรก</a>
         <a href="../index.html#courses">คอร์สทั้งหมด</a>
       </nav>
-      <form class="bi-search" role="search"><span>ค้นหาคอร์ส, dashboard, automation...</span><kbd>⌘K</kbd></form>
+      <form class="bi-search" role="search">
+        <span>ค้นหาคอร์ส, dashboard, automation...</span>
+        <kbd>⌘K</kbd>
+      </form>
     </header>
 
     <main class="bi-detail-wrap">
@@ -27,37 +32,238 @@
           <span class="bi-pill">Intermediate</span>
           <span class="bi-pill">Automation</span>
           <h1>สร้าง Web App ด้วย Google Sheets + Apps Script</h1>
-          <p>เรียนสร้าง Web App ที่รับข้อมูลเข้า Google Sheets ได้จริง เหมาะกับระบบ Lead Form, Booking, PO Request และงานอัตโนมัติของธุรกิจเล็ก</p>
+          <p>เรียนสร้าง Web App ที่รับข้อมูลเข้า Google Sheets ได้จริง มีระบบ Form, ค้นหา, แก้ไข และส่งอีเมลอัตโนมัติ เหมาะกับระบบ Lead Form, Booking, PO Request และงาน automation ของธุรกิจเล็ก</p>
           <div class="bi-detail-meta">
             <span class="bi-rating">★ 4.8</span>
             <span>ผู้เรียน 620 คน</span>
-            <span>28-36 ตอน</span>
+            <span>28–36 ตอน</span>
             <span>อัปเดต เม.ย. 2026</span>
           </div>
-          <div class="bi-instructor"><span>A</span><div><strong>Admin User</strong><small>BookIntelligent Instructor</small></div></div>
+          <div class="bi-instructor">
+            <img src="../assets/images/siripong-profile.jpg" alt="Siripong" style="width:34px;height:34px;border-radius:50%;object-fit:cover;">
+            <div>
+              <strong>Siripong Rojchaiwiriyakul</strong>
+              <small>BookIntelligent Instructor</small>
+            </div>
+          </div>
         </div>
 
         <section class="bi-content-box">
+          <div class="bi-tabbar" aria-label="Course sections">
+            <a href="#details">รายละเอียด</a>
+            <a href="#curriculum">เนื้อหา</a>
+            <a href="#instructor">ผู้สอน</a>
+            <a href="#payment">วิธีสมัคร</a>
+          </div>
+        </section>
+
+        <section id="details" class="bi-content-box">
           <h2>รายละเอียดคอร์ส</h2>
-          <p>คอร์สนี้พาจาก Google Sheets ธรรมดาไปเป็นระบบ Web App ที่มีฟอร์มรับข้อมูล บันทึกลง Sheet ค้นหา แก้ไข และส่งอีเมลอัตโนมัติได้</p>
-          <p>เหมาะกับคนที่อยากสร้างระบบใช้เองโดยไม่ต้องเริ่มจาก backend ซับซ้อน และใช้ Google Workspace ที่มีอยู่ให้คุ้มขึ้น</p>
+          <p>คอร์สนี้พาคุณจาก Google Sheets ธรรมดา ไปเป็นระบบ Web App ที่มี Form รับข้อมูล, บันทึกลง Sheet, ค้นหา, แก้ไข และส่งอีเมลอัตโนมัติได้ โดยใช้ Google Apps Script เขียนโค้ดบน browser ไม่ต้องติดตั้งอะไรเพิ่ม</p>
+          <p>เนื้อหาออกแบบให้เริ่มจากพื้นฐาน JavaScript ที่จำเป็น แล้วค่อย ๆ ประกอบเป็นระบบจริงแบบ step-by-step จนถึงการ deploy เป็น Web App ที่คนอื่นใช้ได้จาก browser</p>
+          <p>ไม่จำเป็นต้องมีพื้นฐาน programming มาก่อน ขอแค่ใช้ Google Sheets ได้และพร้อมเรียนรู้การเขียนโค้ดเบื้องต้น</p>
         </section>
 
         <section class="bi-content-box">
-          <h2>สิ่งที่จะได้เรียน</h2>
-          <div class="bi-check-grid">
-            <span>ใช้ Google Sheets เป็น database</span>
-            <span>พื้นฐาน Google Apps Script</span>
-            <span>สร้าง HTML Form รับข้อมูล</span>
-            <span>ทำ Auto ID, Search, Edit, Delete</span>
-            <span>ส่ง Email Automation</span>
-            <span>Deploy เป็น Web App ใช้งานจริง</span>
+          <h2>ระบบที่จะสร้างได้หลังเรียนจบ</h2>
+          <div class="bi-result-grid">
+            <div>
+              <strong>Lead Form / ลงทะเบียน</strong>
+              <p>Form รับข้อมูลลูกค้า บันทึกลง Sheet พร้อมส่ง email ยืนยันอัตโนมัติ</p>
+            </div>
+            <div>
+              <strong>Booking System</strong>
+              <p>ระบบจองคิว จองห้อง หรือจองบริการ พร้อมตรวจสอบความพร้อมก่อนยืนยัน</p>
+            </div>
+            <div>
+              <strong>PO Request / ขออนุมัติ</strong>
+              <p>ระบบส่งคำขออนุมัติพร้อม email แจ้งเตือนผู้อนุมัติอัตโนมัติ</p>
+            </div>
           </div>
+        </section>
+
+        <section class="bi-content-box">
+          <h2>ประโยชน์ที่ผู้เรียนจะได้รับ</h2>
+          <div class="bi-check-grid">
+            <span>ใช้ Google Sheets เป็น database ของระบบ</span>
+            <span>เขียน Apps Script เบื้องต้นได้จริง</span>
+            <span>สร้าง HTML Form รับข้อมูลและบันทึกลง Sheet</span>
+            <span>ทำ Auto ID, Timestamp, Search และ Edit</span>
+            <span>ส่งอีเมลอัตโนมัติเมื่อมีข้อมูลใหม่</span>
+            <span>Deploy Web App ให้คนอื่นใช้งานได้จาก browser</span>
+          </div>
+        </section>
+
+        <section class="bi-content-box">
+          <h2>คอร์สนี้เหมาะกับใคร</h2>
+          <ul class="bi-bullet-list">
+            <li>เจ้าของธุรกิจ SME ที่ต้องการระบบรับข้อมูล form หรือ booking ใช้เอง</li>
+            <li>Admin หรือ Coordinator ที่ต้องการลดงาน manual ด้วย automation</li>
+            <li>ฟรีแลนซ์ที่อยากสร้างระบบให้ลูกค้าโดยไม่ต้องใช้ server หรือ backend</li>
+            <li>คนที่เคยทำ Google Sheets แล้วอยากต่อยอดสู่ระบบ automation แบบง่าย</li>
+          </ul>
+        </section>
+
+        <section class="bi-content-box">
+          <h2>ผู้เรียนควรมีพื้นฐานอะไรก่อน</h2>
+          <ul class="bi-bullet-list">
+            <li>ใช้ Google Sheets ได้ในระดับกลาง เช่น ใช้สูตร IF, VLOOKUP หรือ SUMIFS ได้บ้าง</li>
+            <li>เคยเห็น HTML หรือ JavaScript มาบ้างจะช่วยให้เรียนง่ายขึ้น แต่ไม่บังคับ</li>
+            <li>ไม่จำเป็นต้องมีพื้นฐาน programming หรือ server-side code มาก่อน</li>
+          </ul>
+        </section>
+
+        <section id="curriculum" class="bi-content-box">
+          <h2>เนื้อหาคอร์ส</h2>
+          <div class="bi-curriculum">
+            <details open>
+              <summary>Module 1: Google Sheets เป็น Database <span>4 บท</span></summary>
+              <ol>
+                <li>ภาพรวมคอร์สและ Web App ที่จะสร้าง</li>
+                <li>โครงสร้าง Sheet ที่ดีสำหรับเป็น database</li>
+                <li>การตั้งชื่อ column, data type และ header</li>
+                <li>Named Range และ Dropdown สำหรับ validation</li>
+              </ol>
+            </details>
+            <details>
+              <summary>Module 2: พื้นฐาน Google Apps Script <span>5 บท</span></summary>
+              <ol>
+                <li>Apps Script คืออะไร และเข้าถึงได้อย่างไร</li>
+                <li>JavaScript พื้นฐานที่จำเป็น: variable, function, array, object</li>
+                <li>อ่านและเขียนข้อมูลลง Google Sheet ด้วย Script</li>
+                <li>วนซ้ำข้อมูลด้วย loop และเงื่อนไข if/else</li>
+                <li>Debug และแก้ error เบื้องต้นใน Apps Script</li>
+              </ol>
+            </details>
+            <details>
+              <summary>Module 3: สร้าง HTML Form และรับข้อมูล <span>5 บท</span></summary>
+              <ol>
+                <li>HTML Form เบื้องต้น: input, select, textarea, button</li>
+                <li>ส่งข้อมูลจาก Form ไป Apps Script ด้วย google.script.run</li>
+                <li>บันทึกข้อมูลลง Sheet และแจ้งผลสำเร็จ/ล้มเหลว</li>
+                <li>Validation ข้อมูลก่อนบันทึก</li>
+                <li>สร้าง Form ที่ดูดีด้วย CSS เบื้องต้น</li>
+              </ol>
+            </details>
+            <details>
+              <summary>Module 4: Auto ID, Timestamp, Search และ Edit <span>6 บท</span></summary>
+              <ol>
+                <li>สร้าง Auto ID อัตโนมัติทุกครั้งที่บันทึก</li>
+                <li>เพิ่ม Timestamp วันที่และเวลาอัตโนมัติ</li>
+                <li>แสดงข้อมูลทั้งหมดจาก Sheet ในตาราง HTML</li>
+                <li>ค้นหาข้อมูลด้วย keyword</li>
+                <li>แก้ไขและอัปเดตข้อมูลที่มีอยู่ใน Sheet</li>
+                <li>ลบข้อมูลพร้อม confirm dialog</li>
+              </ol>
+            </details>
+            <details>
+              <summary>Module 5: ระบบจริง Lead Form / Booking / PO Request <span>4 บท</span></summary>
+              <ol>
+                <li>สร้างระบบ Lead Form / ลงทะเบียนครบวงจร</li>
+                <li>สร้างระบบ Booking คิวหรือบริการ</li>
+                <li>สร้างระบบ PO Request / ขออนุมัติ</li>
+                <li>ปรับ template ให้เข้ากับงานของตัวเอง</li>
+              </ol>
+            </details>
+            <details>
+              <summary>Module 6: ส่งอีเมลอัตโนมัติ <span>4 บท</span></summary>
+              <ol>
+                <li>ส่งอีเมลด้วย GmailApp.sendEmail()</li>
+                <li>ออกแบบ email template แบบ HTML</li>
+                <li>ส่งอีเมลแจ้งเตือนเมื่อมีข้อมูลใหม่</li>
+                <li>ตั้ง Trigger อัตโนมัติเมื่อมีการบันทึกข้อมูล</li>
+              </ol>
+            </details>
+            <details>
+              <summary>Module 7: Deploy เป็น Web App <span>4 บท</span></summary>
+              <ol>
+                <li>Deploy Apps Script เป็น Web App</li>
+                <li>ตั้งค่าสิทธิ์ผู้ใช้: Anyone, Organization, Specific</li>
+                <li>แชร์ link ให้คนอื่นใช้งาน</li>
+                <li>อัปเดต Web App หลัง deploy แล้ว</li>
+              </ol>
+            </details>
+            <details>
+              <summary>Module 8: ใช้ AI ช่วยเขียนและแก้โค้ด <span>4 บท</span></summary>
+              <ol>
+                <li>prompt ให้ AI เขียน Apps Script ได้ถูกต้อง</li>
+                <li>แก้ error ด้วย AI เมื่อโค้ดพัง</li>
+                <li>ใช้ Gemini ใน Google Sheets ช่วยสร้าง formula และ script</li>
+                <li>แนวทางต่อยอด: ขยาย feature และดูแลระบบต่อเนื่อง</li>
+              </ol>
+            </details>
+          </div>
+        </section>
+
+        <section id="instructor" class="bi-content-box">
+          <h2>ผู้สอน</h2>
+          <div class="bi-instructor-panel bi-instructor-panel--profile">
+            <img src="../assets/images/siripong-profile.jpg" alt="Siripong Rojchaiwiriyakul">
+            <div>
+              <p class="bi-instructor-kicker">Senior Sales Analyst & Data Educator</p>
+              <h3>Siripong Rojchaiwiriyakul</h3>
+              <p>ผู้ก่อตั้ง Book Intelligent Academy และผู้สอนด้าน Excel, Google Sheets, Dashboard, Power BI และ Automation สำหรับคนทำงาน โดยมีประสบการณ์ทำงานสาย Sales Analytics และ Business Intelligence มากกว่า 10 ปีในองค์กรระดับ Ford และ ExxonMobil</p>
+              <div class="bi-instructor-stats">
+                <span>10+ ปี ด้าน Sales Analytics</span>
+                <span>5.2K+ YouTube Subscribers</span>
+                <span>185+ Data Videos</span>
+                <span>100+ Free Templates & Solutions</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bi-content-box">
+          <h2>ประสบการณ์ที่เกี่ยวกับคอร์สนี้</h2>
+          <div class="bi-experience-grid">
+            <div>
+              <strong>Automation & Web App</strong>
+              <p>สร้างระบบ automated report, form workflow และ web app ด้วย Google Apps Script สำหรับงานจริงในองค์กร</p>
+            </div>
+            <div>
+              <strong>Google Sheets as Database</strong>
+              <p>ออกแบบ Sheets ที่รองรับการทำงานเป็น backend ให้กับระบบ form, tracking และ approval workflow</p>
+            </div>
+            <div>
+              <strong>Email Automation</strong>
+              <p>สร้างระบบแจ้งเตือนและส่งรายงานอัตโนมัติผ่าน GmailApp สำหรับทีม Sales และ Operations</p>
+            </div>
+            <div>
+              <strong>Data Education</strong>
+              <p>สอนผ่าน BookIntelligent ในหัวข้อ Google Sheets, Apps Script, QUERY, Power BI และ Dashboard Design</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="bi-content-box">
+          <h2>Certifications & Skills</h2>
+          <div class="bi-skill-tags">
+            <span>Google Apps Script</span>
+            <span>Microsoft PL-300 Power BI Data Analyst</span>
+            <span>MOS Excel Expert 365</span>
+            <span>SQL / BigQuery</span>
+            <span>Python / Pandas</span>
+            <span>HTML / CSS / JavaScript</span>
+          </div>
+        </section>
+
+        <section id="payment" class="bi-content-box">
+          <h2>วิธีสมัครเรียน</h2>
+          <ol class="bi-number-list">
+            <li>กดปุ่ม "ซื้อคอร์สนี้ผ่าน LINE"</li>
+            <li>แจ้งชื่อคอร์ส Web App + Apps Script</li>
+            <li>โอนเงินและส่งสลิปใน LINE</li>
+            <li>ทีมงานส่งลิงก์เรียน YouTube Unlisted และ Source Code บน Google Drive ให้ทาง LINE</li>
+          </ol>
         </section>
       </section>
 
       <aside class="bi-buy-card">
-        <a class="bi-thumb bi-thumb--app bi-thumb--video" href="#"><span class="bi-play">▶</span><strong>Web App<br>Automation</strong><small>Course Preview</small></a>
+        <a class="bi-thumb bi-thumb--app bi-thumb--video" href="#">
+          <span class="bi-play">▶</span>
+          <strong>Web App<br>Automation</strong>
+          <small>Course Preview</small>
+        </a>
         <div class="bi-buy-card__body">
           <strong class="bi-price">฿1,490.00</strong>
           <span class="bi-discount">Early Bird</span>
@@ -65,9 +271,9 @@
           <a class="bi-secondary-button" href="https://line.me/R/ti/p/@bookintelligent" target="_blank" rel="noopener">สอบถามก่อนสมัคร</a>
           <h3>คอร์สนี้ประกอบด้วย</h3>
           <ul>
-            <li>วิดีโอ 28-36 ตอน</li>
+            <li>วิดีโอ 28–36 ตอน</li>
             <li>Google Sheets Database Template</li>
-            <li>Apps Script Source Code</li>
+            <li>Apps Script Source Code ครบชุด</li>
             <li>Deployment Checklist</li>
             <li>เข้าถึงได้ตลอดชีพ</li>
           </ul>

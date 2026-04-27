@@ -8,7 +8,7 @@
 
 | Phase | สถานะ | ความคืบหน้า |
 |---|---|---|
-| Phase 1 — Course Site Setup | 🔄 กำลังทำ | 10% |
+| Phase 1 — Course Site Setup | 🔄 กำลังทำ | 75% |
 | Phase 2 — Payment & Delivery Setup | ⏳ รอ | 0% |
 | Phase 3 — Course Creation & Launch | ⏳ รอ | 0% |
 | Phase 4 — Launch Optimization | ⏳ รอ | 0% |
@@ -22,12 +22,12 @@
 - [x] สร้างหน้ารวมคอร์ส (`site/index.html`)
 - [x] สร้างหน้ารายละเอียดคอร์สแรก (`site/courses/google-sheets-dashboard.html`)
 - [x] สร้าง CSS หลัก (`site/assets/css/styles.css`)
-- [ ] จัดโครงโปรเจกต์สำหรับ GitHub Pages
-- [ ] สร้างหน้าแยกสำหรับ Excel Dashboard
-- [ ] สร้างหน้าแยกสำหรับ Web App + Apps Script
-- [ ] สร้างหน้าแยกสำหรับ Power BI Dashboard
+- [x] จัดโครงโปรเจกต์สำหรับ GitHub Pages (เพิ่ม `.nojekyll` ใน `site/`)
+- [x] สร้างหน้าแยกสำหรับ Excel Dashboard (เนื้อหาครบ 7 module)
+- [x] สร้างหน้าแยกสำหรับ Web App + Apps Script (เนื้อหาครบ 8 module)
+- [x] สร้างหน้าแยกสำหรับ Power BI Dashboard (เนื้อหาครบ 8 module)
 - [ ] เตรียม assets / thumbnail สำหรับแต่ละคอร์ส
-- [ ] Deploy ขึ้น GitHub Pages
+- [ ] Deploy ขึ้น GitHub Pages (ตั้งค่า repo → Settings → Pages → serve from `site/` ด้วย GitHub Actions หรือย้ายไป `docs/`)
 - [ ] วางแผนผูก subdomain `learn.bookintelligent.com`
 
 ### WordPress Integration
