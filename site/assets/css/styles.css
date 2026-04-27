@@ -117,6 +117,10 @@ a {
 }
 
 .bi-page-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
   padding: 58px 46px 42px;
   background: #ffffff;
 }
@@ -130,8 +134,8 @@ a {
 .bi-author-bar {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   gap: 14px;
-  margin-top: 22px;
 }
 
 .bi-author-avatar {
