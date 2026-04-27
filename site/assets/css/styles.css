@@ -865,6 +865,10 @@ a {
     padding: 12px 18px;
   }
 
+  .bi-logo {
+    height: 36px;
+  }
+
   .bi-search {
     grid-column: 1 / -1;
     justify-self: stretch;
@@ -872,7 +876,14 @@ a {
   }
 
   .bi-page-head {
-    padding: 38px 18px 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 32px 18px 24px;
+  }
+
+  .bi-author-bar {
+    width: 100%;
   }
 
   .bi-catalog {
@@ -897,18 +908,22 @@ a {
   .bi-buy-card {
     position: static;
   }
+
+  .bi-check-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 560px) {
-  .bi-brand strong {
-    max-width: 140px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  .bi-logo {
+    height: 30px;
+  }
+
+  .bi-page-head h1 {
+    font-size: 2.2rem;
   }
 
   .bi-footer,
-  .bi-check-grid,
   .bi-result-grid,
   .bi-experience-grid {
     grid-template-columns: 1fr;
@@ -916,5 +931,13 @@ a {
 
   .bi-instructor-panel--profile {
     flex-direction: column;
+  }
+
+  .bi-detail-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .bi-buy-card__body {
+    padding: 14px;
   }
 }
