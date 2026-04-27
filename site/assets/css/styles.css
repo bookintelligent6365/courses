@@ -127,6 +127,55 @@ a {
   font-weight: 700;
 }
 
+.bi-author-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.bi-author-avatar {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--bi-cyan);
+}
+
+.bi-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.bi-author-info strong {
+  color: var(--bi-ink);
+  font-size: 0.95rem;
+}
+
+.bi-author-info > span {
+  color: var(--bi-muted);
+  font-size: 0.82rem;
+}
+
+.bi-cert-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.bi-cert-badges span {
+  border: 1px solid rgba(8, 199, 207, 0.4);
+  border-radius: 999px;
+  background: #eefbfd;
+  color: var(--bi-cyan-dark);
+  padding: 2px 9px;
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
 .bi-page-head h1 {
   margin: 0;
   color: var(--bi-ink);
